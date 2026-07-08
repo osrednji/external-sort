@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>BenchmarkRunner</AssemblyName>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="K4os.Compression.LZ4" Version="1.3.8" />
+    <PackageReference Include="K4os.Compression.LZ4.Streams" Version="1.3.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="FileSorterOlder.cs" />
+    <Compile Remove="FileSorterNonOptimized.cs" />
+    <Compile Remove="New folder\**" />
+    <Compile Remove="Result\**" />
+  </ItemGroup>
+</Project>
