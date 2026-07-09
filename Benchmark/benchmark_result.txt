@@ -1,0 +1,48 @@
+﻿╔══════════════════════════════════════════════════════════════╗
+║              SORT ALGORITHM BENCHMARK REPORT                ║
+╚══════════════════════════════════════════════════════════════╝
+
+Date       : 2026-07-09 13:27:54
+Input file : C:\Users\HP\Downloads\GenerateAndSort\Benchmark\input\input.txt
+File size  : 1035.0 MB
+Runs/algo  : 10
+.NET       : 8.0.22
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PER-ALGORITHM RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Algorithm : SortingAlgorithm
+  Desc      : 100 GB-capable: multi-pass fanout merge (FAN=16), core-saturated dynamic chunk size, zero-allocation ArrayPool, parallel Radix Sort, separate index array, O(1) resizing hash-map, O(N) rank mapping, byte-level merge.
+  Successful: 10/10
+  Median    : 00:48.091
+  Min       : 00:29.506
+  Max       : 00:59.555
+  Avg       : 00:47.084
+  StdDev    : 9.777s
+
+  Run-by-run:
+    Run  1: 00:29.506
+    Run  2: 00:31.978
+    Run  3: 00:47.005
+    Run  4: 00:40.501
+    Run  5: 00:48.969
+    Run  6: 00:48.091
+    Run  7: 00:58.229
+    Run  8: 00:59.555
+    Run  9: 00:55.591
+    Run 10: 00:51.421
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUMMARY  (sorted by median, fastest first)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Algorithm                 Median    vs Fastest   vs Previous
+  ------------------    ----------    ----------   -----------
+  SortingAlgorithm       00:48.091    --  (best)                --           ◄ FASTEST
+
+  ★  FASTEST: SortingAlgorithm  (median 00:48.091)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  END OF REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

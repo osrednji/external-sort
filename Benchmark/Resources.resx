@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="0" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoCustomInput" xml:space="preserve">
+    <value>No custom input file provided.</value>
+  </data>
+  <data name="DefaultInput" xml:space="preserve">
+    <value>Defaulting to input file : {0}</value>
+  </data>
+  <data name="DefaultRuns" xml:space="preserve">
+    <value>Defaulting to runs/algo  : {0}</value>
+  </data>
+  <data name="DefaultWorkDir" xml:space="preserve">
+    <value>Defaulting to work dir   : {0}</value>
+  </data>
+  <data name="DefaultReportPath" xml:space="preserve">
+    <value>Defaulting to report path: {0}</value>
+  </data>
+  <data name="ErrorInputNotFound" xml:space="preserve">
+    <value>ERROR: Input file not found: {0}</value>
+  </data>
+  <data name="ErrorRunsMustBePositive" xml:space="preserve">
+    <value>ERROR: runs_per_algorithm must be >= 1</value>
+  </data>
+  <data name="FatalError" xml:space="preserve">
+    <value>FATAL ERROR DURING BENCHMARK: {0}</value>
+  </data>
+  <data name="HeaderBorder" xml:space="preserve">
+    <value>══════════════════════════════════════════════════════</value>
+  </data>
+  <data name="HeaderTitle" xml:space="preserve">
+    <value> BENCHMARK COMPLETE</value>
+  </data>
+  <data name="HeaderTitleStart" xml:space="preserve">
+    <value> SORT ALGORITHM BENCHMARK</value>
+  </data>
+  <data name="HeaderInput" xml:space="preserve">
+    <value> Input      : {0}</value>
+  </data>
+  <data name="HeaderAlgorithmsCount" xml:space="preserve">
+    <value> Algorithms : {0}</value>
+  </data>
+  <data name="HeaderRunsPerAlgo" xml:space="preserve">
+    <value> Runs/algo  : {0}</value>
+  </data>
+  <data name="HeaderTotalRuns" xml:space="preserve">
+    <value> Total runs : {0}</value>
+  </data>
+  <data name="HeaderCpuCores" xml:space="preserve">
+    <value> CPU cores  : {0}</value>
+  </data>
+  <data name="AlgoSectionHeader" xml:space="preserve">
+    <value>┌─ {0} ─────────────────────────────────────────</value>
+  </data>
+  <data name="AlgoDescription" xml:space="preserve">
+    <value>│  {0}</value>
+  </data>
+  <data name="AlgoRunsCount" xml:space="preserve">
+    <value>│  Runs: {0}</value>
+  </data>
+  <data name="AlgoSeparator" xml:space="preserve">
+    <value>│</value>
+  </data>
+  <data name="RunProgressLine" xml:space="preserve">
+    <value>│  Run {0,2}/{1} ... </value>
+  </data>
+  <data name="RunTime" xml:space="preserve">
+    <value>{0:mm\:ss\.fff}</value>
+  </data>
+  <data name="RunFailed" xml:space="preserve">
+    <value>FAILED — {0}</value>
+  </data>
+  <data name="AlgoSummaryMedian" xml:space="preserve">
+    <value>│  Median : {0}</value>
+  </data>
+  <data name="AlgoSummaryMinMax" xml:space="preserve">
+    <value>│  Min    : {0}   Max: {1}</value>
+  </data>
+  <data name="AlgoSummaryFailed" xml:space="preserve">
+    <value>│  Failed : {0} run(s)</value>
+  </data>
+  <data name="AlgoSectionFooter" xml:space="preserve">
+    <value>└──────────────────────────────────────────────────────</value>
+  </data>
+  <data name="FullReportWritten" xml:space="preserve">
+    <value>Full report written to: {0}</value>
+  </data>
+  <data name="ProgressLine" xml:space="preserve">
+    <value>\r│  [{0}] {1}/{2}  </value>
+  </data>
+  <data name="ReportHeaderBorderTop" xml:space="preserve">
+    <value>╔══════════════════════════════════════════════════════════════╗</value>
+  </data>
+  <data name="ReportHeaderTitle" xml:space="preserve">
+    <value>║              SORT ALGORITHM BENCHMARK REPORT                ║</value>
+  </data>
+  <data name="ReportHeaderBorderBottom" xml:space="preserve">
+    <value>╚══════════════════════════════════════════════════════════════╝</value>
+  </data>
+  <data name="ReportDate" xml:space="preserve">
+    <value>Date       : {0:yyyy-MM-dd HH:mm:ss}</value>
+  </data>
+  <data name="ReportInputFile" xml:space="preserve">
+    <value>Input file : {0}</value>
+  </data>
+  <data name="ReportFileSize" xml:space="preserve">
+    <value>File size  : {0:F1} MB</value>
+  </data>
+  <data name="ReportFileSizeUnavailable" xml:space="preserve">
+    <value>File size  : (unavailable)</value>
+  </data>
+  <data name="ReportRunsPerAlgo" xml:space="preserve">
+    <value>Runs/algo  : {0}</value>
+  </data>
+  <data name="ReportCpuCores" xml:space="preserve">
+    <value>CPU cores  : {0}</value>
+  </data>
+  <data name="ReportDotNetVersion" xml:space="preserve">
+    <value>.NET       : {0}</value>
+  </data>
+  <data name="ReportSectionBorder" xml:space="preserve">
+    <value>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</value>
+  </data>
+  <data name="ReportPerAlgoResultsTitle" xml:space="preserve">
+    <value>  PER-ALGORITHM RESULTS</value>
+  </data>
+  <data name="ReportAlgoName" xml:space="preserve">
+    <value>  Algorithm : {0}</value>
+  </data>
+  <data name="ReportAlgoDesc" xml:space="preserve">
+    <value>  Desc      : {0}</value>
+  </data>
+  <data name="ReportAlgoSuccess" xml:space="preserve">
+    <value>  Successful: {0}/{1}</value>
+  </data>
+  <data name="ReportAlgoMedian" xml:space="preserve">
+    <value>  Median    : {0}</value>
+  </data>
+  <data name="ReportAlgoMin" xml:space="preserve">
+    <value>  Min       : {0}</value>
+  </data>
+  <data name="ReportAlgoMax" xml:space="preserve">
+    <value>  Max       : {0}</value>
+  </data>
+  <data name="ReportAlgoAvg" xml:space="preserve">
+    <value>  Avg       : {0:mm\:ss\.fff}</value>
+  </data>
+  <data name="ReportAlgoStdDev" xml:space="preserve">
+    <value>  StdDev    : {0:F3}s</value>
+  </data>
+  <data name="ReportRunByRunHeader" xml:space="preserve">
+    <value>  Run-by-run:</value>
+  </data>
+  <data name="ReportRunFailed" xml:space="preserve">
+    <value>FAILED ({0})</value>
+  </data>
+  <data name="ReportRunLine" xml:space="preserve">
+    <value>    Run {0,2}: {1}</value>
+  </data>
+  <data name="ReportSummaryTitle" xml:space="preserve">
+    <value>  SUMMARY  (sorted by median, fastest first)</value>
+  </data>
+  <data name="ReportNoSuccessfulRuns" xml:space="preserve">
+    <value>  No successful runs recorded.</value>
+  </data>
+  <data name="ReportHeaderCols" xml:space="preserve">
+    <value>  {0}  {1,12}  {2,12}  {3,12}</value>
+  </data>
+  <data name="ColHeaderAlgorithm" xml:space="preserve">
+    <value>Algorithm</value>
+  </data>
+  <data name="ColHeaderMedian" xml:space="preserve">
+    <value>Median</value>
+  </data>
+  <data name="ColHeaderVsFastest" xml:space="preserve">
+    <value>vs Fastest</value>
+  </data>
+  <data name="ColHeaderVsPrevious" xml:space="preserve">
+    <value>vs Previous</value>
+  </data>
+  <data name="ReportBestMarker" xml:space="preserve">
+    <value>  --  (best)</value>
+  </data>
+  <data name="ReportSlowerMarker" xml:space="preserve">
+    <value>+{0:F2}s ({1:F2}x slower)</value>
+  </data>
+  <data name="ReportNoPrevMarker" xml:space="preserve">
+    <value>  --</value>
+  </data>
+  <data name="ReportVsPrevMarker" xml:space="preserve">
+    <value>+{0:F2}s</value>
+  </data>
+  <data name="ReportFastestIndicator" xml:space="preserve">
+    <value> ◄ FASTEST</value>
+  </data>
+  <data name="ReportRankLine" xml:space="preserve">
+    <value>  {0}  {1,12}  {2,-24}  {3,-14}{4}</value>
+  </data>
+  <data name="ReportFastestSummary" xml:space="preserve">
+    <value>  ★  FASTEST: {0}  (median {1})</value>
+  </data>
+  <data name="ReportSpeedupSummary" xml:space="preserve">
+    <value>  ★  Fastest is {0:F2}x faster than slowest ({1})</value>
+  </data>
+  <data name="ReportEndOfReport" xml:space="preserve">
+    <value>  END OF REPORT</value>
+  </data>
+  <data name="ConfigMissingInputPath" xml:space="preserve">
+    <value>InputPath configuration is missing in appsettings.json.</value>
+  </data>
+  <data name="ConfigMissingRuns" xml:space="preserve">
+    <value>Runs configuration is missing in appsettings.json.</value>
+  </data>
+  <data name="ConfigMissingWorkDir" xml:space="preserve">
+    <value>WorkDir configuration is missing in appsettings.json.</value>
+  </data>
+  <data name="ConfigMissingResultPath" xml:space="preserve">
+    <value>ResultPath configuration is missing in appsettings.json.</value>
+  </data>
+  <data name="CleanupWarning" xml:space="preserve">
+    <value>[Warning] Failed to clean up path: {0}. Reason: {1}</value>
+  </data>
+  <data name="PeakMemory" xml:space="preserve">
+    <value>Peak memory usage (Working Set): {0:F1} MB ({1:F3} GB)</value>
+  </data>
+</root>
