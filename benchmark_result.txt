@@ -1,83 +1,23 @@
-﻿╔══════════════════════════════════════════════════════════════╗
-║              SORT ALGORITHM BENCHMARK REPORT                ║
-╚══════════════════════════════════════════════════════════════╝
-
-Date       : 2026-05-19 09:26:53
-Input file : C:\Users\HP\Downloads\New folder\input_1gb.txt
-File size  : 1600.0 MB
-Runs/algo  : 1
-CPU cores  : 12
-.NET       : 8.0.22
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  PER-ALGORITHM RESULTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  Algorithm : V3 Optimized LZ4+ParallelSort
-  Desc      : V3 with zero-allocation offsets, Partitioner range loops, Parallel Merge Tree, synchronous LZ4 writes.
-  Successful: 1/1
-  Median    : 01:31.895
-  Min       : 01:31.895
-  Max       : 01:31.895
-
-  Run-by-run:
-    Run  1: 01:31.895
-
-  Algorithm : V4 Optimized LZ4+RankSort
-  Desc      : V4 with Rank-Packed long keys, Parallel synchronous parsing/ranking, Parallel primitive Merge Tree, synchronous LZ4 writes.
-  Successful: 1/1
-  Median    : 00:50.920
-  Min       : 00:50.920
-  Max       : 00:50.920
-
-  Run-by-run:
-    Run  1: 00:50.920
-
-  Algorithm : V5 Zero-Allocation LZ4+ByteSort
-  Desc      : V5 with zero-allocation single-pass byte buffer parsing, direct byte chunk copying, parallel long/int array sort, and LZ4 temp files.
-  Successful: 1/1
-  Median    : 00:39.122
-  Min       : 00:39.122
-  Max       : 00:39.122
-
-  Run-by-run:
-    Run  1: 00:39.122
-
-  Algorithm : V6 Zero-Allocation Radix-Pipeline + Byte-Level Merge
-  Desc      : V6 with zero-allocation byte-level merging, bit-packed keys (Rank + Number + Index in ulong), parallel chunk sorters running Radix Sort.
-  Successful: 1/1
-  Median    : 00:32.345
-  Min       : 00:32.345
-  Max       : 00:32.345
-
-  Run-by-run:
-    Run  1: 00:32.345
-
-  Algorithm : V7 Zero-Allocation Pool-Pipeline + Radix + Byte-Level Merge
-  Desc      : V7 with complete ArrayPool buffer recycling, dynamically calculated chunk sizes to saturate CPU cores, and direct byte writes.
-  Successful: 1/1
-  Median    : 00:34.190
-  Min       : 00:34.190
-  Max       : 00:34.190
-
-  Run-by-run:
-    Run  1: 00:34.190
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  SUMMARY  (sorted by median, fastest first)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  Algorithm                                                            Median    vs Fastest   vs Previous
-  -------------------------------------------------------------    ----------    ----------   -----------
-  V6 Zero-Allocation Radix-Pipeline + Byte-Level Merge              00:32.345    --  (best)                --           ◄ FASTEST
-  V7 Zero-Allocation Pool-Pipeline + Radix + Byte-Level Merge       00:34.190  +1.85s (1.06x slower)     +1.85s        
-  V5 Zero-Allocation LZ4+ByteSort                                   00:39.122  +6.78s (1.21x slower)     +4.93s        
-  V4 Optimized LZ4+RankSort                                         00:50.920  +18.57s (1.57x slower)    +11.80s       
-  V3 Optimized LZ4+ParallelSort                                     01:31.895  +59.55s (2.84x slower)    +40.97s       
-
-  ★  FASTEST: V6 Zero-Allocation Radix-Pipeline + Byte-Level Merge  (median 00:32.345)
-  ★  Fastest is 2.84x faster than slowest (V3 Optimized LZ4+ParallelSort)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  END OF REPORT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+=========================================
+         BENCHMARK RESULTS (10 PASSES)   
+=========================================
+Date/Time:      2026-07-09 08:38:22
+Input File:     C:\Users\HP\Downloads\New folder\input_1gb.txt
+Output File:    C:\Users\HP\Downloads\New folder\sorted_1gb.txt
+Total Passes:   10
+-----------------------------------------
+Pass 01:        0.449 seconds (00:00.44)
+Pass 02:        0.485 seconds (00:00.48)
+Pass 03:        0.513 seconds (00:00.51)
+Pass 04:        0.532 seconds (00:00.53)
+Pass 05:        0.409 seconds (00:00.40)
+Pass 06:        0.122 seconds (00:00.12)
+Pass 07:        0.652 seconds (00:00.65)
+Pass 08:        0.389 seconds (00:00.38)
+Pass 09:        0.125 seconds (00:00.12)
+Pass 10:        0.298 seconds (00:00.29)
+-----------------------------------------
+Average Time:   0.397 seconds
+Minimum Time:   0.122 seconds
+Maximum Time:   0.652 seconds
+=========================================
