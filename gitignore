@@ -1,0 +1,31 @@
+# Build results
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+
+# Benchmark artifacts — inputs and outputs are generated, not versioned
+Benchmark/input/*
+Benchmark/output/*
+!Benchmark/input/readme
+!Benchmark/output/readme
+*_tmp_*/
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Logs and temp
+*.log
+*.tmp
